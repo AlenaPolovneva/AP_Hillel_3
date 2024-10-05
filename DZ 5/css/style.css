@@ -1,174 +1,169 @@
 @font-face {
+  font-family: "Cera-Pro-reg";
+  src: url(../fonts/CeraPro-Regular.ttf);
+  }
+  @font-face {
+     font-family: "Cera-Pro-bold";
+     src: url(../fonts/CeraPro-Bold.ttf);
+  }
+  @font-face {
+     font-family: "Cera-Pro-med";
+     src: url(../fonts/CeraPro-Medium.ttf);
+  }
+  @font-face {
+    font-family: "Cera-Pro-lig";
+    src: url(..//fonts/CeraPro-Light.ttf);
+    }
+  * {
+     padding:0;
+     margin:0;
+     box-sizing:border-box;
+     }
+     .products {
+      display: flex;
+      }
+  .main-cards {
+     display: flex;
+     row-gap: 30px;
+     margin-left: 30px;
+     margin-right: 30px;
+     margin-top: 50px;
+  }
+  .img {
+    max-width: 100%;
+  }
+  .card {
+    width:50%;
+    background-color: #FBFBFB;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: right;
+    align-items: center;
+    bottom: 0;
+  }
+  .card-img {
+      max-width: 100%;
+  }
+  .card h2 {
+     font-family:"Cera-Pro-bold"; 
+     font-weight: 900;
+     font-size: 18px;
+     line-height: 24px;
+     text-align: right;
+     color: #3D3D3D;
+     text-align: center;
+  }
+  .card p {
+      font-family: "Cera-Pro-reg";
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      text-align: right;
+      color: #727272;
+      text-align: center;
+      
+   }
+   .card button {
+      width: 140px;
+      height: 40px;
+      background-color: #46a358;
+      border: none;
+      margin-top: 20px;
+      margin-left: 490px;
+
+   }
+   .btn a {
     font-family: "Cera-Pro-reg";
-    src: url(../fonts/CeraPro-Regular.ttf);
-    }
-    @font-face {
-       font-family: "Cera-Pro-bold";
-       src: url(../fonts/CeraPro-Bold.ttf);
-    }
-    @font-face {
-       font-family: "Cera-Pro-med";
-       src: url(../fonts/CeraPro-Medium.ttf);
-    }
-    @font-face {
-      font-family: "Cera-Pro-lig";
-      src: url(..//fonts/CeraPro-Light.ttf);
-      }
-    @font-face {
-      font-family: "Hanged Letters";
-      src: url(../fonts/Hanged\ Letters.ttf);
-    }
-    * {
-       padding:0;
-       margin:0;
-       box-sizing:border-box;
-       }
-       
-      header {
-      display: inline-block;
-      margin-top:20px ;
-      margin-left: 100px;
-      margin-bottom: 20px;
-      }
-      .navbar {
-        margin-top: 20px;
-        margin-left: 100px;
-        margin-bottom: 20px;
-        display: flex;
-      }
-      .all-plants {
-        font-family: "Cera-Pro-bold";
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 15px;
-        color: #46A358;
-        text-decoration: underline;
-        margin-right: 50px;
-        margin-left: 171px;
-      }
-      .new-arrivals, .sale {
-        font-family: "Cera-Pro-reg";
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 15px;
-        color: #3D3D3D;
-        text-decoration: none;
-        margin-right: 50px;
-      }
-      .short-by {
-        font-family: "Cera-Pro-reg";
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 15px;
-        color: #3D3D3D;
-        text-decoration: none;
-        margin-right: 50px;
-        margin-left: 400px;
-      }
-      .img {
-        max-width: 100%;
-      }
-      .container {
-      width: 88%;
-      margin: 0 auto;
-      }
-      .aside {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        max-height: 26%;
-        min-height: 310px;
-        text-align: left;
-      }
-      .aside content {
-      background-color:#FBFBFB;
-      padding: 14px 18px;
-      }
-      .navigator {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        gap: 10px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-      }
-      .navigator a {
-        padding: 8px 0 8px 12px;
-        text-decoration: none;
-        color: #3D3D3D;
-      }
-      .banner {
-        width: 100%;
-        background: linear-gradient(to bottom, rgba (70, 163, 88, 0.5), rgba (70, 163, 88, 0.003));
-        position: relative;
-        margin-top: 100px;
-      }
-      .banner h2 {
-        padding-bottom: 10px;
-        font-family:"Hanged Letters";
-        font-weight: 400;
-        font-size: 65px;
-        line-height: 65px;
-        color: #46A358;
-      }
-      .banner h4 {
-        padding-bottom: 10px;
-        font-family: "Cera-Pro-bold";
-        font-weight: 700;
-        font-size: 23px;
-        list-style: 16px;
-      }
-      .products {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      justify-content: left;
-      }
-      .main-cards {
-      display: flex;
-      flex-direction: row-reverse;
-      flex-wrap: wrap;
-      gap: 100px;
-    }
-      .card {
-        width: calc(33.333%-20px);
-        min-height: 300px;
-      }
-      .card-img {
-        height: 100%;
-      }
-      .card-det h5 {
-        font-family: "Cera-Pro-med";
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 16px;
-        color: #3D3D3D;
-      }
-      .card-price {
-        font-family: "Cera-Pro-bold";
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 16px;
-        color:#46A358;
-      }
-      .page {
-        display: flex;
-        flex-direction: row;
-        font-family: "Cera-Pro-lig";
-        font-weight: 300;
-        font-size: 18px;
-        line-height: 16px;
-        color: #3D3D3D; 
-        text-align: left;
-        margin-top: 100px;
-        margin-left: 1100px;
-      }
-      .number span {
-        font-family: "Cera-Pro-lig";
-        font-weight: 300;
-        font-size: 18px;
-        line-height: 16px;
-        color: #3D3D3D; 
-        background-color: #46A358;
-        text-align: left;
-      }
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: right;
+    color: #FFFF;
+   }
+   .section {
+    margin-left: 86px;
+    margin-top: 95px;
+    margin-bottom: 50px;
+   }
+   .reg-heading {
+    font-size: "Cera-Pro-bold"; 
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 16px;
+    color: #3D3D3D;
+    text-align: center;
+   }
+   .sec-heading {
+    font-size: "Cera-Pro-reg"; 
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #727272;
+    text-align: center;
+    margin-top: 10px;
+   }
+   .banners {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+   }
+  .banner {
+    width: calc(25%-15px);
+    position: relative;
+    padding: 5px 5px;
+    bottom: 0;
+  }
+  .ban-content {
+    position: absolute;
+    background-color: #FBFBFB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0;
+  }
+  .ban-text {
+    font-family:"Cera-Pro-med";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #46a358;
+  }
+  .head {
+    font-family:"Cera-Pro-bold";
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #3D3D3D;
+    padding-top: 5px;
+  }
+  .ban-od {
+    font-family:"Cera-Pro-reg";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #727272;
+    margin-top: 10px;
+  }
+  .ban-more {
+    font-family:"Cera-Pro-med";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #3D3D3D;
+    margin-top: 3px;
+  }
+  .ban-more span {
+    font-family:"Cera-Pro-med";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #46a358;
+    margin-top: 3px;
+  }
+  
