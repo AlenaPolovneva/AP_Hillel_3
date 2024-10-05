@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: Roboto;
+}
+.container {
+   border: 1px solid black; 
+   width: 332px;
+   margin: 30px auto;
+   padding: 0 16px;
+}
+h1 {
+font-family: Roboto;
+font-size: 20px;
+text-align: center;
+margin: 52px 0 40px;
+}
+.text-login {
+display: inline-block;
+width: 1px;
+height: 10px;
+background-color: #3d3d3d;
+vertical-align: middle;
+}
+.text-color {
+    color: #46a358;
+}
+.text-od {
+    text-align: center;
+    font-size: 13px;
+    margin-bottom: 14px;
+}
+.input {
+text-align: center;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+.text,
+.password,
+.email {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 16px;
+    border-radius: 5px;
+}
+.submit {
+    text-align: center;
+    font-family: Roboto;
+    color: #fff;
+    padding: 18px 0 24px;
+    background-color:#46a358;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 36px;
+    width: 100%;
+    height: 16px;
+}
+.sets {
+ margin-top: 20px;
+ margin-left: 20px;
+ width: 100%;
+}
+.button {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #fff;
+    color: #474747;
+    border: 2px solid #dadada;
+}
+.button img {
+    vertical-align: bottom;
+    margin-right: 9px;
+}
+.label {
+    text-align: center;
+}
+.span {
+    display: inline-block;
+    text-align: center;
+    background-color: gainsboro;
+    width: 80px;
+    height: 1px;
+    vertical-align: middle;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
