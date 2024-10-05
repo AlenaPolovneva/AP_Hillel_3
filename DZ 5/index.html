@@ -3,46 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register Form</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Greenshop</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div class="container">
-      <section>
-        <h1> Login I
-            <span class="login-text"></span>
-            <span class="text-color">Register</span>
-        </h1>
-         <p class="text-od">Enter your email and password to register.</p>
-         <form>
-            <div class="input">
-                <input type="text" name="Username" placeholder="Username" id="Username" required>
-                <input type="email" name="Email" placeholder="Enter your email adress" required>
-                <input type="password" name="Password" placeholder="Password" required>
-                <input type="password" name="Confirm password" placeholder="Confirm password" required>
-            </div>
-                <div>
-                    <button class="submit">Register</button>
-                </div>
-         </form>
-         <div class="label">
-            <span></span>
-            --------Or register with-------- 
-            <span></span>
-         </div>
-         <div class="sets"></div>
+    <header class="logo">
+        <img src="./img/icon.vector.svg" alt="">
+        <p class="text-logo">GREENSHOP</p>
+        <nav>
+            <a href="./index.html" class="home">Home</a>
+            <a href="./index.html" class="shop">Shop</a>
+            <a href="./index.html" class="plant-care">Plant Care</a>
+            <a href="./index.html" class="blogs">Blogs</a>
+        </nav>
+        <div class="label">
             <button>
-                <img src="./img/icon-gogle.svg" alt="">
-               Continue with Google
-             </button>
-            <button>
-              <img src="./img/icons/icon-fb.svg" alt="">
-               Continue with Facebook  
-            </button> 
-      </section>
-    </div>
+                <img src="./img/Login.svg" alt="logout">
+            </button>
+        </div>
+    </header>
+    <section class="hero-section">
+        <div class="wrapper">
+            <p class="text-oder">WELCOME TO GREENSHOP</p>
+            <h1>
+                LET'S MAKE A BETTER
+                <span class="text-area">PLANET</span>
+            </h1>
+            <p class="text-label">
+                We are an online plant shop offering a wide range of cheap and trendy plants. 
+                Use our plants to create an unique Urban Jungle. Order your favorite plants!
+            </p>
+            <button class="button-area">SHOP NOW</button>
+        </div>
+        <div class="img-items">
+        <img class="img-1" src="./img/img-1.svg" alt="img-1">
+        </div>
+    </section>
 </body>
 </html>
