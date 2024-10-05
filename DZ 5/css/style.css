@@ -10,108 +10,165 @@
        font-family: "Cera-Pro-med";
        src: url(../fonts/CeraPro-Medium.ttf);
     }
+    @font-face {
+      font-family: "Cera-Pro-lig";
+      src: url(..//fonts/CeraPro-Light.ttf);
+      }
+    @font-face {
+      font-family: "Hanged Letters";
+      src: url(../fonts/Hanged\ Letters.ttf);
+    }
     * {
        padding:0;
        margin:0;
-       box-sizing: border-box;
+       box-sizing:border-box;
        }
-    header {
-    display: flex;
-    }
-    .logo {
-    margin-top: 30px;
-    margin-left: 150px;
-    }
-    .text-logo {
-    font-family:"Cera-Pro-bold";
-    font-size: 16px;
-    color: #46A358;
-    }
-    .text-logo nav{ 
-       margin-top: 8px;
-       margin-left: 379px;
-    }
-    .home {
-       font-family: "Cera-Pro-reg";
-       width: 700;
-       size: 16px;
-       color: black;
-       margin-left: 50px;
-    } 
-    .shop,
-    .plant-care,
-    .blogs {
-       display: inline-block;
-       font-family:"Cera-Pro-reg" ;
-       width: 400;
-       size: 16px;
-       color: black;
-       margin-right: 50px;
-    }
-    .label-btn {
-    background-color: green;
-    color: white;
-    border-radius: 5px;
-    border: none;
-    line-height: 18px;
-    padding: 12px 28px;
-    }
-    .button img {
-       vertical-align: bottom;
-    }
-    .hero-section {
-      width: 100%;
-      height: 100%;
-    }
-    .wrapper {
-       display: inline-block;
-       width: 100%;
-       margin-top: 68px;
-       margin-left: 43px;
-       margin-right: 43px;
-    }
-    .text-oder {
-    font-family:"Cera-Pro-med";
-    font-size: 16px;
-    font-weight: 500;
-    color:#3D3D3D;
-    padding: 5px;
-    }
-    .h1 {
-       font-family:"Cera-Pro-med";
-       font-size: 70px;
-       font-weight: 900;
-       color: black;
-    }
-    .text-area {
-       font-family:"Cera-Pro-med";
-       font-size: 23px;
-       font-weight: 900;
-       color: #46A358;
-    }
-    .text-label {
-       font-family:"Cera-Pro-reg";
-       font-weight: 400;
-       font-size: 14px;
-       color: #727272;
-       line-height: 24px;
-      }
-    .button-area {
-       width: 140px;
-       height: 40px;
-       border-radius: 5px;
-       margin-top: 11px;
-       margin-left: 26px;
-       background-color: green;
-       border: 1px solid blue;
-       font-family:"Cera-Pro-bold";
-       font-size: 16px;
-       font-weight: 700;
-      color: #FFFFFF;
-      line-height: 20px;
-    }
-    .img-1 {
+       
+      header {
       display: inline-block;
-       width:507px;
-       margin-left: 693px;
+      margin-top:20px ;
+      margin-left: 100px;
+      margin-bottom: 20px;
+      }
+      .navbar {
+        margin-top: 20px;
+        margin-left: 100px;
+        margin-bottom: 20px;
+        display: flex;
+      }
+      .all-plants {
+        font-family: "Cera-Pro-bold";
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 15px;
+        color: #46A358;
+        text-decoration: underline;
+        margin-right: 50px;
+        margin-left: 171px;
+      }
+      .new-arrivals, .sale {
+        font-family: "Cera-Pro-reg";
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 15px;
+        color: #3D3D3D;
+        text-decoration: none;
+        margin-right: 50px;
+      }
+      .short-by {
+        font-family: "Cera-Pro-reg";
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 15px;
+        color: #3D3D3D;
+        text-decoration: none;
+        margin-right: 50px;
+        margin-left: 400px;
+      }
+      .img {
+        max-width: 100%;
+      }
+      .container {
+      width: 88%;
+      margin: 0 auto;
+      }
+      .aside {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-height: 26%;
+        min-height: 310px;
+        text-align: left;
+      }
+      .aside content {
+      background-color:#FBFBFB;
+      padding: 14px 18px;
+      }
+      .navigator {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      .navigator a {
+        padding: 8px 0 8px 12px;
+        text-decoration: none;
+        color: #3D3D3D;
+      }
+      .banner {
+        width: 100%;
+        background: linear-gradient(to bottom, rgba (70, 163, 88, 0.5), rgba (70, 163, 88, 0.003));
+        position: relative;
+        margin-top: 100px;
+      }
+      .banner h2 {
+        padding-bottom: 10px;
+        font-family:"Hanged Letters";
+        font-weight: 400;
+        font-size: 65px;
+        line-height: 65px;
+        color: #46A358;
+      }
+      .banner h4 {
+        padding-bottom: 10px;
+        font-family: "Cera-Pro-bold";
+        font-weight: 700;
+        font-size: 23px;
+        list-style: 16px;
+      }
+      .products {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: left;
+      }
+      .main-cards {
+      display: flex;
+      flex-direction: row-reverse;
+      flex-wrap: wrap;
+      gap: 100px;
     }
+      .card {
+        width: calc(33.333%-20px);
+        min-height: 300px;
+      }
+      .card-img {
+        height: 100%;
+      }
+      .card-det h5 {
+        font-family: "Cera-Pro-med";
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 16px;
+        color: #3D3D3D;
+      }
+      .card-price {
+        font-family: "Cera-Pro-bold";
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 16px;
+        color:#46A358;
+      }
+      .page {
+        display: flex;
+        flex-direction: row;
+        font-family: "Cera-Pro-lig";
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 16px;
+        color: #3D3D3D; 
+        text-align: left;
+        margin-top: 100px;
+        margin-left: 1100px;
+      }
+      .number span {
+        font-family: "Cera-Pro-lig";
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 16px;
+        color: #3D3D3D; 
+        background-color: #46A358;
+        text-align: left;
+      }
