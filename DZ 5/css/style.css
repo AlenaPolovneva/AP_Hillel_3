@@ -1,5 +1,5 @@
-@font-face {
-    font-family: "Cera-Pro-reg";
+   @font-face {
+   font-family: "Cera-Pro-reg";
     src: url(../fonts/CeraPro-Regular.ttf);
     }
     @font-face {
@@ -16,16 +16,16 @@
        box-sizing: border-box;
        }
     header {
-    display: flex;
+       display: flex;
     }
     .logo {
-    margin-top: 30px;
-    margin-left: 150px;
+       margin-top: 30px;
+      margin-left: 150px;
     }
     .text-logo {
-    font-family:"Cera-Pro-bold";
-    font-size: 16px;
-    color: #46A358;
+      font-family:"Cera-Pro-bold";
+      font-size: 16px;
+      color: #46A358;
     }
     .text-logo nav{ 
        margin-top: 8px;
@@ -49,12 +49,12 @@
        margin-right: 50px;
     }
     .label-btn {
-    background-color: green;
-    color: white;
-    border-radius: 5px;
-    border: none;
-    line-height: 18px;
-    padding: 12px 28px;
+       background-color: green;
+       color: white;
+       border-radius: 5px;
+       border: none;
+       line-height: 18px;
+       padding: 12px 28px;
     }
     .button img {
        vertical-align: bottom;
@@ -71,11 +71,11 @@
        margin-right: 43px;
     }
     .text-oder {
-    font-family:"Cera-Pro-med";
-    font-size: 16px;
-    font-weight: 500;
-    color:#3D3D3D;
-    padding: 5px;
+       font-family:"Cera-Pro-med";
+       font-size: 16px;
+       font-weight: 500;
+       color:#3D3D3D;
+       padding: 5px;
     }
     .h1 {
        font-family:"Cera-Pro-med";
@@ -107,11 +107,11 @@
        font-family:"Cera-Pro-bold";
        font-size: 16px;
        font-weight: 700;
-      color: #FFFFFF;
-      line-height: 20px;
+       color: #FFFFFF;
+       line-height: 20px;
     }
     .img-1 {
-      display: inline-block;
+       display: inline-block;
        width:507px;
        margin-left: 693px;
     }
