@@ -1,117 +1,191 @@
-   @font-face {
+@font-face {
    font-family: "Cera-Pro-reg";
-    src: url(../fonts/CeraPro-Regular.ttf);
+   src: url(../fonts/CeraPro-Regular.ttf);
+   }
+@font-face {
+   font-family: "Cera-Pro-bold";
+   src: url(../fonts/CeraPro-Bold.ttf);
+   }
+@font-face {
+   font-family: "Cera-Pro-med";
+   src: url(../fonts/CeraPro-Medium.ttf);
+  }
+* {
+   padding:0;
+   margin:0;
+   box-sizing: border-box;
+   list-style: none;
+   text-decoration: none;
+   }
+header {
+   position: fixed;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 12px 40px;
+   }
+.auter-level-menu {
+   display: flex;
+   }
+.auter-level-menu li {
+   list-style: none;
+   padding: 18px;
+   position: relative;
+   }
+.auter-level-menu li:hover.inner-level-menu {
+   opacity: 1;
+   visibility: visible;
+   }
+.inner-level-menu {
+   position: absolute;
+   min-width: 200px;
+   background-color: #edf6ee;
+   top: 50px;
+   left: 0;
+   opacity: 0;
+   visibility: hidden;
+   transition: 0,6s ease-in-out;
+}
+.menu-style {
+background-color: #46A358;
+   }
+.menu-style span {
+   font-family:"Cera-Pro-bold";
+   font-size: 16px; 
+   color: #FFFFFF;
+}
+.type-level-menu {
+   position: absolute;
+   min-width: 200px;
+   background-color: #edf6ee;
+   top: 0px;
+   left: 200px;
+   opacity: 0;
+   visibility: hidden;
+   transition: 0,6s ease-in-out;
+   }
+.inner-level-menu li:hover.type-level-menu {
+   opacity: 1;
+   visibility: visible;
+   }
+.logo {
+   display: flex;
+   }
+.logo img {
+   margin-left: 13px;
+   }
+.text-logo {
+   font-family:"Cera-Pro-bold";
+   font-size: 16px;
+   color: #46A358;
+   }
+.text-logo nav {
+   margin-top: 8px;
+   margin-left: 379px;
+   }
+.home {
+   margin-left: 20px;
+   margin-right: 20px;
+   font-family: "Cera-Pro-reg";
+   width: 700;
+   size: 16px;
+   color: black;
+   text-decoration: none;
+   } 
+.shop,
+.blogs {
+   display: inline-block;
+   font-family:"Cera-Pro-reg" ;
+   width: 400;
+   size: 16px;
+   color: black;
+   margin-left: 20px;
+   margin-right: 20px;
+   text-decoration: none;
+   }
+.plant-care {
+   font-family:"Cera-Pro-bold" ;
+   width: 700;
+   size: 16px;
+   color: black;
+   text-decoration: underline solid 2px #46A358;
+   }
+.label-btn {
+   background-color: green;
+   color: white;
+   border-radius: 5px;
+   border: none;
+   line-height: 18px;
+   padding: 12px 25px;
+   }
+.button img {
+   vertical-align: bottom;
+   }
+.hero-section {
+   display: flex;
+   width: 100%;
+   height: 100%;
+   }
+.wrapper {
+   width: 50%;
+   margin-top: 68px;
+   margin-left: 43px;
+   margin-right: 43px;
+   }
+.text-oder {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: left;
+   text-align: left;
+   gap: 20px;
+   bottom: 20px;
+   font-family:"Cera-Pro-med";
+   font-size: 16px;
+   font-weight: 500;
+   color:#3D3D3D;
+   padding: 5px;
+   }
+.h1 {
+   font-family:"Cera-Pro-med";
+   font-size: 70px;
+   font-weight: 900;
+   color: black;
+   }
+.text-area {
+   font-family:"Cera-Pro-med";
+   font-size: 23px;
+   font-weight: 900;
+   color: #46A358;
+   }
+.text-label {
+   font-family:"Cera-Pro-reg";
+   font-weight: 400;
+   font-size: 14px;
+   color: #727272;
+   line-height: 24px;
+   margin-bottom: 30px;
+   }
+.button-area {
+   width: 140px;
+   height: 40px;
+   border-radius: 5px;
+   margin-top: 11px;
+   background-color: green;
+   border-radius: 5px;
+   border: none;
+   font-family:"Cera-Pro-bold";
+   font-size: 16px;
+   font-weight: 700;
+   color: #FFFFFF;
+   line-height: 20px;
     }
-    @font-face {
-       font-family: "Cera-Pro-bold";
-       src: url(../fonts/CeraPro-Bold.ttf);
-    }
-    @font-face {
-       font-family: "Cera-Pro-med";
-       src: url(../fonts/CeraPro-Medium.ttf);
-    }
-    * {
-       padding:0;
-       margin:0;
-       box-sizing: border-box;
-       }
-    header {
-       display: flex;
-    }
-    .logo {
-       margin-top: 30px;
-      margin-left: 150px;
-    }
-    .text-logo {
-      font-family:"Cera-Pro-bold";
-      font-size: 16px;
-      color: #46A358;
-    }
-    .text-logo nav{ 
-       margin-top: 8px;
-       margin-left: 379px;
-    }
-    .home {
-       font-family: "Cera-Pro-reg";
-       width: 700;
-       size: 16px;
-       color: black;
-       margin-left: 50px;
-    } 
-    .shop,
-    .plant-care,
-    .blogs {
-       display: inline-block;
-       font-family:"Cera-Pro-reg" ;
-       width: 400;
-       size: 16px;
-       color: black;
-       margin-right: 50px;
-    }
-    .label-btn {
-       background-color: green;
-       color: white;
-       border-radius: 5px;
-       border: none;
-       line-height: 18px;
-       padding: 12px 28px;
-    }
-    .button img {
-       vertical-align: bottom;
-    }
-    .hero-section {
-      width: 100%;
-      height: 100%;
-    }
-    .wrapper {
-       display: inline-block;
-       width: 100%;
-       margin-top: 68px;
-       margin-left: 43px;
-       margin-right: 43px;
-    }
-    .text-oder {
-       font-family:"Cera-Pro-med";
-       font-size: 16px;
-       font-weight: 500;
-       color:#3D3D3D;
-       padding: 5px;
-    }
-    .h1 {
-       font-family:"Cera-Pro-med";
-       font-size: 70px;
-       font-weight: 900;
-       color: black;
-    }
-    .text-area {
-       font-family:"Cera-Pro-med";
-       font-size: 23px;
-       font-weight: 900;
-       color: #46A358;
-    }
-    .text-label {
-       font-family:"Cera-Pro-reg";
-       font-weight: 400;
-       font-size: 14px;
-       color: #727272;
-       line-height: 24px;
-      }
-    .button-area {
-       width: 140px;
-       height: 40px;
-       border-radius: 5px;
-       margin-top: 11px;
-       margin-left: 26px;
-       background-color: green;
-       border: 1px solid blue;
-       font-family:"Cera-Pro-bold";
-       font-size: 16px;
-       font-weight: 700;
-       color: #FFFFFF;
-       line-height: 20px;
-    }
-    .img-1 {
-       display: inline-block;
-       width:507px;
-       margin-left: 693px;
-    }
+.img-items {
+   width: 50%;
+   display: flex;
+   flex-direction: row;
+   justify-content:right;
+   flex-wrap: wrap;
+   }
+.img-1 {
+   width: 100%;   
+   }
